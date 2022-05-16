@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Grape+Nuts&family=Homemade+Apple&family=Kalam:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(245, 226, 243);
+}
+
+/* CLASES BARRA DE NAVEGACION */
+/* Barra de navegacion FIJA */
+header {
+    width: 100vw;
+    background-color: rgb(238, 136, 175);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Akaya Telivigala', cursive;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(121, 8, 83);
+}
+
+/* Alto minimo etiquetas main */
+
+
+.subtitulo {
+    color: rgb(82, 16, 148);
+}
+
+p {
+    color: rgb(10, 4, 99);
+    font-family: sans-serif;
+}
+/* CLASES PAGINA HOME */
+#fraseHome {
+    color: rgb(22, 150, 236);
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+    font-size: 70px;
+    max-height: 100%;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px black;
+}
+
+.videocontainer {
+    position: relative;
+}
+
+video {
+    width: 100%;
+}
+
+.titleHome {
+    position: absolute;
+    top: 300px;
+    color: rgb(121, 8, 83);
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.mainHome {
+    width: 96vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+figure{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+figure >img{
+max-width: 100%;
+}
+/* CLASES FOOTER */
+footer {
+    background-color: rgb(238, 136, 175);
+    position:relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.footerText {
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    text-align: center; 
+}
+/* Contenedor de Iconos redes sociales */
+.socialContainer {
+    width: 20%;
+}
+/* Iconos redes sociales */
+.social {
+    max-width: 40px;
+}
+
+/* CLASES PAGINAS PERROS Y GATOS */
+/* Contenedor de Productos y servicios */
+.container {
+    list-style: none;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Cajas de servicios */
+.serviceItem {
+    width: 96%;
+    height: 300px;
+    margin: 1%;
+    background-color: rgb(177, 140, 212);
+    padding: 2%;
+}
+.mainNosotros{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 76vh;
+}
+.imgNosotros{
+    margin: 2%;
+    width: 36%;
+    height: 400px;
+    background-color: rgb(177, 223, 223);
+    
+}
+.textNosotros{
+    width: 56%;
+    margin: 2%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family:'Akaya Telivigala', cursive;
+    font-size: 40px;
+    
+}
+.titulos{
+   width: 100%;
+   margin: 1%;
+   display: flex;
+   font-family:'Akaya Telivigala', cursive;
+   font-size: 50px;
+   color: rgb(73, 32, 110);
+   justify-content: center;
+}
+.datosComent{
+    font-family:'Akaya Telivigala', cursive;
+    font-size: 20px;
+}
+.imputForm{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.formulario{
+    width: 40%;
+
+}
+.formContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    
+}
+.botonComent{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    background-color:  rgb(89, 174, 231);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.coment{
+    height: 60px;
+}
+.footerText >p{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 20px;
+    color: black;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 15px;
+    width: 98%;
+}
+
+.productItem{
+    height: auto;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 10px 5px 15px black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+}
+.principal{
+    display: flex;   
+    justify-content: center;
+}
+.imgProductos{
+    height: auto;
+    width: 40%;
+}
+.descripcionProducto{
+    width:50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.descripcionProducto >h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+    color: chocolate;
+    padding: 10px;
+}
+.descripcionProducto >h3{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+    color: chocolate;
+    padding: 10px;
+    }
+
+.productItem:hover{
+    transform:scale(1.05);
+    box-shadow: none;
+}
+  
+
+
+
+@media only screen and (max-width:420px){
+    .productos{ 
+        grid-template-columns: 1fr   ; 
+    }
+    .titulos{
+        font-size: 25px;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footerText{
+        width: 100%;
+    }
+    .footerText>p{
+        font-size: 15px;
+    }
+    .socialContainer{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .formulario {
+        width: 90%;
+    }
+    .mainHome{
+        grid-template-columns: 1fr ;
+    }
+    .titleHome {
+        top: 80px;
+        font-size: 30px;
+    }
+    .imgNosotros{
+        width: 90%;
+    }
+    .mainNosotros{
+        flex-direction: column;
+    }
+    .textNosotros{
+        width: 90%;
+        font-size: 23px; 
+       }
+
+}
+@media only screen and (min-width:421px) and (max-width:768px){
+    .productos{ 
+        grid-template-columns: 1fr 1fr;
+    }
+    .titulos{
+        font-size: 35px;
+        text-align: center;
+    }
+    .formulario {
+        width: 60%;
+    }
+    .mainHome{
+        grid-template-columns: 1fr ;
+    }
+    .titleHome {
+        top: 150px;
+        font-size: 60px;
+    }
+   .textNosotros{
+    width: 90%;
+    font-size: 30px; 
+   }
+   .mainNosotros{
+       flex-direction: column;
+   }
+   .imgNosotros{
+    width: 90%;
+}
+.socialContainer{
+    flex-direction: column;
+    width: fit-content;
+}
+.footerText>p{
+    font-size: 15px;
+}
+}
+@media only screen and (min-width:769px) and (max-width:1200px){
+    .mainHome{
+        grid-template-columns: 1fr;
+    }
+    .textNosotros{
+        font-size: 30px; 
+       }
+}
