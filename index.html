@@ -7,33 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Kingdom PetShop - Inicio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li> Inicio </li>
-                <li> <a href="./paginas/Nosotros.html">Nosotros</a> </li>
-                <li> <a href="./paginas/Perros.html">Perros</a></li>
-                <li> <a href="./paginas/Gatos.html">Gatos</a></li>
-                <li> <a href="./paginas/Contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
-    </header>
-<!-- Incorporacion de video en Home con titulo sobre video -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="w-100 d-flex flex-column">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./paginas/Perros.html">Perros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./paginas/Gatos.html">Gatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./paginas/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Incorporacion de video en Home con titulo sobre video -->
     <div class="videocontainer">
         <video autoplay loop controls muted>
             <source src="./multimedia/Perritos.mp4" width="100%" frameborder="0"></iframe>
         </video>
-        <h1 class="titleHome">Bienvenidos a Kingdom PetShop</h1>
+        <h1 class="titleHome h1 display-1">Bienvenidos a Kingdom PetShop</h1>
     </div>
 
     <main class="mainHome">
         <figure>
             <img src="./imagenes/MascotasInicio.png" alt="foto de cachorritos">
         </figure>
-        <h3 id="fraseHome">Mi hogar es donde mi mascota esté!!</h3>
+        <h3 id="fraseHome" class="display-3">Mi hogar es donde mi mascota esté!!</h3>
     </main>
 
     <footer>
@@ -52,6 +72,10 @@
         </figure>
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

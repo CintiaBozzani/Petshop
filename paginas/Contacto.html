@@ -7,32 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Kingdom PetShop - Contacto</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a> </li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Perros.html">Perros</a></li>
-                <li> <a href="Gatos.html">Gatos</a></li>
-                <li> Contactos</li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="w-100 d-flex flex-column">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Perros.html">Perros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Gatos.html">Gatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled " href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <h1 class="titulos">Dejanos tu comentario</h1>
     <main class="formContainer">
-        
+
         <form action="#" class="formulario">
             <label for="Nombre" class="datosComent">
                 Nombre y Apellido<br>
                 <input type="text" name="Nombre" placeholder="Cintia Bozzani" class="imputForm">
             </label><br>
             <label for="Direccion" class="datosComent">
-                Direccion<br >
-                <input type="text" name="Direccion" placeholder="calle 109 375"class="imputForm" >
+                Direccion<br>
+                <input type="text" name="Direccion" placeholder="calle 109 375" class="imputForm">
             </label><br>
             <label for="Localidad" class="datosComent">
                 Localidad<br>
@@ -46,18 +66,34 @@
             </label>
             <label for="Telefono" class="datosComent">
                 Telefono<br>
-                <input type="number" name="Telefono" placeholder="1151116012"class="imputForm" >
+                <input type="number" name="Telefono" placeholder="1151116012" class="imputForm">
             </label><br>
             <label for="Email" class="datosComent">
                 Email<br>
-                <input type="email" name="Email" placeholder="aabbcc@gmail.com"class="imputForm" >
+                <input type="email" name="Email" placeholder="aabbcc@gmail.com" class="imputForm">
             </label><br>
             <label for="Comentario" class="datosComent">
                 Comentario<br>
-                <textarea name="Comentario" placeholder="Dejanos tu comentario"class="imputForm coment" ></textarea>
+                <textarea name="Comentario" placeholder="Dejanos tu comentario" class="imputForm coment"></textarea>
             </label><br>
-            <input type="submit" value="Enviar comentario" class="datosComent botonComent">
+            <input type="button" value="Enviar comentario" class="datosComent botonComent" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
         </form>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body datosComent">
+                        Gracias por tu comentario, te responderemos a la brevedad
+                    </div>
+                    <div class="modal-footer">
+                        <a type="button" class="btn btn-primary botonComent" href="../index.html">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -75,6 +111,10 @@
             <img class="social" src="../imagenes/Twitter.png" alt="logo twitter">
         </figure>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

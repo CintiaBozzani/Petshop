@@ -7,21 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Kingdom PetShop - Perros</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a> </li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li> Perros</li>
-                <li> <a href="Gatos.html">Gatos</a></li>
-                <li> <a href="Contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="w-100 d-flex flex-column">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled " href="#">Perros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Gatos.html">Gatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <h1 class="titulos">Encontra para tu perro los mejores productos y servicios</h1>
@@ -30,7 +51,7 @@
 
 
             <div class="productos">
-                <div class="productItem">   
+                <div class="productItem">
                     <img class="imgProductos" src="../imagenes/perros/productoUno.svg" alt="producto royal canin">
                     <div class="descripcionProducto">
                         <h2>Royal Canin</h2>
@@ -90,10 +111,60 @@
         <h2 class="subtitulo">Servicios</h2>
         <section class="principal">
 
-            <ul class="container">
-                <li class="serviceItem">Servicio 1</li>
-                <li class="serviceItem">Servicio 2</li>
-            </ul>
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="w-100 d-flex flex-row">
+                            <img src="../imagenes/perros/servicioPerros3.jpg" class="d-block w-50 " alt="...">
+                            <img src="../imagenes/perros/servicioPerros6.jpg" class="d-block w-50 " alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cuidado veterinario para tu perro</h5>
+                            <p>El veterinario no solo es útil en el tratamiento de enfermedades, también cumple una función muy importante en su prevención. Y es que el veterinario es la persona que mejor conoce a tu mascota, por lo que te aconsejará mejor que nadie.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="w-100 d-flex flex-row">
+                            <img src="../imagenes/perros/servicioPerros2.jpg" class="d-block w-50" alt="...">
+                            <img src="../imagenes/perros/servicioPerros4.jpg" class="d-block w-50" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Baño para perros en nuestro Spa canino</h5>
+                            <p>La calidad del pelaje de un perro está determinada por su genética, pero también por su nutrición y sus cuidados básicos. Es decir que un correcto aseo es un factor determinante en el pelaje del perro y en su salud. Por ello el baño debe convertirse en una actividad imprescindible para mantener en buenas condiciones su manto y para cuidar su higiene general, evitando eczemas e infecciones.
+
+                                La periodicidad de cuidados como el corte de pelo, el cepillado, la limpieza de orejas y dientes, vería en relación a la raza y el tipo de manto. La frecuencia del baño depende entonces de las necesidades de cada perro, su entorno y su familia. Sin embargo la recomendación general es bañarlos cada dos o tres semanas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="w-100 d-flex flex-row">
+                            <img src="../imagenes/perros/servicioPerros1.jpg" class="d-block w-50" alt="...">
+                            <img src="../imagenes/perros/servicioPerros5.jpg" class="d-block w-50" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Peluqueria canina</h5>
+                            <p>En pocas palabras podemos decir que la peluqueria canina es el oficio dedicado a los cuidados para mejorar la higiene y la apariencia del can, para lo cual se llevan a cabo diversas tareas como peinar, limpiar, cortar el pelo y cepillar el manto del perro. La peluqueria canina también incluye otras tareas como el corte de uñas, la limpieza del canal auditivo y la aplicación de diversos tratamientos para mejorar el pelaje del perro.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
 
@@ -112,6 +183,10 @@
             <img class="social" src="../imagenes/Twitter.png" alt="logo twitter">
         </figure>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
