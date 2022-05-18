@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  .cardContainer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .cardFlip {
+    color: inherit;
+    cursor: pointer;
+    width:740px;;
+    height: 500px !important;
+    perspective: 1000px;
+  }
+
+  
+  .front,
+  .back {
+    border: 3px solid rgb(13, 189, 243)  !important;  
+    display: flex ;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 1200ms;
+    font-family:'Akaya Telivigala', cursive !important ;
+   
+  }
+  .back>p{
+      font-size: 35px;
+  }
+  
+  .front {
+    
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(118, 160, 236) !important;
+    overflow: hidden;
+    background-color: cadetblue;
+  }
+  
+  .front:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    opacity: 0.25;
+    z-index: -1;
+  }
+  .cardFlip:hover .front {
+    transform: rotateY(180deg);
+    background: rgb(134, 191, 224);
+  }
+  .back {
+    background: rgb(120, 158, 180) !important; 
+    transform: rotateY(-180deg);
+    padding: 0 1em;
+  }
+  .back >p{
+    font-family:'Akaya Telivigala', cursive ;
+    color:rgb(10, 7, 1) !important;
+  }
+  .cardFlip:hover .back {
+    transform: rotateY(0deg);
+  }
+
+  @media only screen and (max-width:420px){
+    .back >p{
+    font-size: 20px;
+      } 
+      .cardFlip{
+          width: 95%;
+          height: 300px !important;
+      }
+  }
+  @media only screen and (min-width:421px) and (max-width:647px){
+    .back >p{
+        font-size: 25px;
+          } 
+          .cardFlip{
+            width: 95%;
+            height: 400px !important;
+        }
+}
+@media only screen and (min-width: 648px) and (max-width:767px){
+    .back >p{
+        font-size: 25px;
+          } 
+          .cardFlip{
+            width: 80%;
+            height: 400px !important;
+        }
+}
+
+
+  
+  
+
+
+
+ 
+
