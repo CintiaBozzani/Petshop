@@ -71,7 +71,7 @@
     background: rgb(134, 191, 224);
   }
   .back {
-    background: rgb(120, 158, 180) !important; 
+    background: rgb(189, 222, 228) !important; 
     transform: rotateY(-180deg);
     padding: 0 1em;
   }
