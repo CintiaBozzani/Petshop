@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300&display=swap');
+@import "_general";
+@import "_medias";
+
+$fondo: rgb(134, 191, 224);
+
+.back {
+    background: $fondo  !important;
+    transform: rotateY(-180deg);
+    padding: 0 1em;
+    p {
+        font-size: 35px;
+        font-family: 'Akaya Telivigala', cursive;
+        color: rgb(10, 7, 1) !important;
+    }
+}
+.front {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(152, 181, 235) !important;
+    overflow: hidden;
+    background-color: $fondo  !important;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        opacity: 0.25;
+        z-index: -1;
+    }
+}
+
+.cardFlip {
+    &:hover {
+        .front {
+            transform: rotateY(180deg);
+            background: $fondo;
+        }
+        .back {
+            transform: rotateY(0deg);
+                }
+    }
+
+}
+
+

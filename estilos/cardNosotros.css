@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cardContainer {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+.front,
+.back {
+  border: 3px solid #a2d8e9 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: ease-in-out 1200ms;
+  transition: ease-in-out 1200ms;
+}
+
+.cardFlip {
+  color: inherit;
+  cursor: pointer;
+  width: 740px;
+  height: 500px !important;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@media only screen and (max-width: 647px) {
+  .back p {
+    font-size: 20px;
+  }
+  .cardFlip {
+    width: 95%;
+    height: 300px !important;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 647px) {
+  .back p {
+    font-size: 25px;
+  }
+  .cardFlip {
+    width: 95%;
+    height: 400px !important;
+  }
+}
+
+@media only screen and (min-width: 647px) and (max-width: 767px) {
+  .back p {
+    font-size: 25px;
+  }
+  .cardFlip {
+    width: 80%;
+    height: 400px !important;
+  }
+}
+
+.back {
+  background: #86bfe0 !important;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  padding: 0 1em;
+}
+
+.back p {
+  font-size: 35px;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #0a0701 !important;
+}
+
+.front {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #98b5eb !important;
+  overflow: hidden;
+  background-color: #86bfe0 !important;
+}
+
+.front::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+.cardFlip:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background: #86bfe0;
+}
+
+.cardFlip:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+/*# sourceMappingURL=cardNosotros.css.map */

@@ -1,0 +1,41 @@
+$xsmall: 420px;
+$small:647px;
+$medium:767px;
+
+@media only screen and (max-width:$small) {
+    .back {
+        p {
+            font-size: 20px;
+        }
+    }
+    .cardFlip {
+        width: 95%;
+        height: 300px !important;
+    }
+}
+
+@media only screen and (min-width:$xsmall) and (max-width:$small) {
+    .back {
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .cardFlip {
+        width: 95%;
+        height: 400px !important;
+    }
+}
+
+@media only screen and (min-width: $small) and (max-width:$medium) {
+    .back {
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .cardFlip {
+        width: 80%;
+        height: 400px !important;
+    }
+}

@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.cardContainer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.front,
+.back {
+    border: 3px solid rgb(162, 216, 233) !important;
+    display: flex;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 1200ms;
+}
+.cardFlip {
+    color: inherit;
+    cursor: pointer;
+    width: 740px;
+    height: 500px !important;
+    perspective: 1000px;
+}
