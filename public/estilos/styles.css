@@ -399,10 +399,6 @@ footer {
 }
 
 @media only screen and (max-width: 420px) {
-  .productos {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
   .titulos {
     font-size: 25px;
     text-align: center;
@@ -460,10 +456,6 @@ footer {
 }
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .productos {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
   .titulos {
     font-size: 35px;
     text-align: center;
@@ -506,6 +498,20 @@ footer {
   }
   .textoCarousel {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+  .productos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 1040px) {
+  .productos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
