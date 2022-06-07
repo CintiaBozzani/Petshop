@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Grape+Nuts&family=Homemade+Apple&family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.flex, .principal, figure, footer, .container, .mainNosotros, .titulos, .formContainer, .productItem, .descripcionProducto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e2ebee !important;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* CLASES BARRA DE NAVEGACION */
+/* Barra de navegacion FIJA */
+.navbar {
+  background-color: #ee88af !important;
+}
+
+.navbar-toggler {
+  max-height: 40px !important;
+  max-width: 60px !important;
+}
+
+.disabled {
+  color: grey !important;
+}
+
+nav ul li {
+  font-size: 30px;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+a {
+  color: #790853 !important;
+}
+
+/* Alto minimo etiquetas main */
+.contenedor {
+  margin: auto;
+  display: table;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  position: relative;
+  font-size: 50px !important;
+  color: #521094;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #e2ebee;
+  border-left: 1px solid #000;
+  -webkit-animation: escribir 3.5s steps(10) infinite alternate;
+          animation: escribir 3.5s steps(10) infinite alternate;
+}
+
+p {
+  color: #0a0463;
+  font-family: sans-serif;
+}
+
+/* CLASES PAGINA HOME */
+#fraseHome {
+  color: #1696ec !important;
+  font-family: 'Grape Nuts', cursive !important;
+  text-align: center !important;
+  font-size: 70px;
+  max-height: 100%;
+  font-weight: bolder !important;
+  text-shadow: 3px 3px 3px black !important;
+}
+
+.videocontainer {
+  position: relative;
+}
+
+video {
+  width: 100%;
+}
+
+.titleHome {
+  position: absolute;
+  top: 40vh;
+  color: #790853 !important;
+  font-family: 'Akaya Telivigala', cursive !important;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-shadow: 3px 3px 3px white !important;
+}
+
+.mainHome {
+  width: 96vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+}
+
+figure {
+  width: 100%;
+}
+
+figure > img {
+  max-width: 100%;
+}
+
+/* CLASES FOOTER */
+footer {
+  background-color: #ee88af;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.footerText {
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.footerMap {
+  color: black !important;
+  text-decoration: none;
+}
+
+/* Contenedor de Iconos redes sociales */
+.socialContainer {
+  width: 20%;
+}
+
+/* Iconos redes sociales */
+.social {
+  max-width: 40px;
+}
+
+/* CLASES PAGINAS PERROS Y GATOS */
+/* Contenedor de Productos y servicios */
+.container {
+  list-style: none;
+  width: 100vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* Cajas de servicios */
+.serviceItem {
+  width: 96%;
+  height: 300px;
+  margin: 1%;
+  background-color: #b18cd4;
+  padding: 2%;
+}
+
+.mainNosotros {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5%;
+}
+
+.imgNosotros {
+  width: auto;
+  height: 100%;
+}
+
+.textNosotros {
+  width: 56%;
+  margin: 2%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 40px;
+}
+
+.titulos {
+  width: 100%;
+  margin: 1%;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 50px;
+  color: #49206e;
+}
+
+.datosComent {
+  font-family: 'Akaya Telivigala', cursive !important;
+  font-size: 20px !important;
+  width: 100%;
+}
+
+.imputForm {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.formulario {
+  width: 40%;
+}
+
+.formContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 75vh;
+}
+
+.botonComent {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  background-color: #59aee7 !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Akaya Telivigala', cursiv !important;
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 25px !important;
+  text-align: center !important;
+}
+
+.coment {
+  height: 60px;
+}
+
+.footerText > p {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 20px;
+  color: black;
+}
+
+.productos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  width: 98%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.productItem {
+  height: auto;
+  max-height: 300px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 5px 15px black;
+          box-shadow: 10px 5px 15px black;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(lightgrey), to(white));
+  background: linear-gradient(to right, lightgrey, white);
+}
+
+.imgProductos {
+  height: 100%;
+  width: auto;
+}
+
+.descripcionProducto {
+  width: 50%;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.descripcionProducto > h2 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+  color: chocolate;
+  padding: 10px;
+}
+
+.descripcionProducto > h3 {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+  color: chocolate;
+  padding: 10px;
+}
+
+.productItem:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: -webkit-gradient(linear, left top, right top, from(white), to(lightgrey));
+  background: linear-gradient(to right, white, lightgrey);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.tituloCarousel {
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bolder !important;
+  font-size: 35px;
+  color: #070329;
+  text-shadow: 3px 3px 3px white !important;
+}
+
+.textoCarousel {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+  color: #11043f;
+}
+
+.imgCaroucel {
+  opacity: 0.6;
+}
+
+.brand {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  width: 80px;
+  height: auto;
+}
+
+.banner {
+  width: 100vw;
+}
+
+.nav-link:hover {
+  text-shadow: 3px 3px 3px grey !important;
+}
+
+@media only screen and (max-width: 420px) {
+  .productos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .titulos {
+    font-size: 25px;
+    text-align: center;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerText {
+    width: 100%;
+  }
+  .footerText > p {
+    font-size: 15px;
+  }
+  .socialContainer {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formulario {
+    width: 90%;
+  }
+  .mainHome {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .titleHome {
+    top: 8vh;
+    font-size: 30px;
+  }
+  .mainNosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .textNosotros {
+    width: 90%;
+    font-size: 23px;
+  }
+  .brand {
+    right: 10px;
+    left: none;
+    width: 60px;
+  }
+  .textoCarousel {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .productos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .titulos {
+    font-size: 35px;
+    text-align: center;
+  }
+  .formulario {
+    width: 60%;
+  }
+  .mainHome {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .titleHome {
+    top: 15vh;
+  }
+  .textNosotros {
+    width: 90%;
+    font-size: 30px;
+  }
+  .mainNosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .socialContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footerText > p {
+    font-size: 15px;
+  }
+  .brand {
+    right: 10px !important;
+    width: 60px;
+  }
+  .textoCarousel {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .mainHome {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .textNosotros {
+    font-size: 30px;
+  }
+  .brand {
+    right: 10px;
+    width: 60px;
+  }
+  .textoCarousel {
+    font-size: 15px;
+  }
+}
+
+@-webkit-keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: -10%;
+  }
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: -10%;
+  }
+}

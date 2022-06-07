@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <meta name="keywords" content="petshop, productos veterinaria, servicios veterinaria, peluqueria canina, tienda de mascotas, online petshop, comida perro, comida gato, alimentacion mascotas, mascotas" />
+    <meta name="description" content="Los mejores productos y servicios para mascotas, podes encontrar todo lo necesario para el cuidad y la estetica de tu mejor amigo."> 
+    <link rel="stylesheet" href="./estilos/styles.css">
     <title>Kingdom PetShop - Inicio</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -46,8 +48,8 @@
     </nav>
     <!-- Incorporacion de video en Home con titulo sobre video -->
     <div class="videocontainer">
-        <video autoplay loop controls muted>
-            <source src="./multimedia/Perritos.mp4" width="100%" frameborder="0"></iframe>
+        <video autoplay loop muted >
+            <source src="./multimedia/Perritos.mp4" width="100%" frameborder="0" ></iframe>
         </video>
         <h1 class="titleHome h1 display-1">Bienvenidos a Kingdom PetShop</h1>
     </div>
@@ -61,7 +63,7 @@
 
     <footer>
         <div class="footerText">
-            <p>Direccion: Calle 109 375 - Berazategui - Buenos Aires</p>
+            <p><a class="footerMap" href="./paginas/map.html" target="_blank">Direccion: Calle 109 375 - Berazategui - Buenos Aires</a></p>
             <p>Horarios: De Lunes a Viernes de 9:00 a 18:00 hs</p>
         </div>
         <div class="footerText">
@@ -79,6 +81,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>  
 </body>
 
 </html>

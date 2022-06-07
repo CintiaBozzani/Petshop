@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 
+ .flex{
+    display:flex;
+    justify-content: center;
+}
 * {
     padding: 0;
     margin: 0;
@@ -35,14 +39,32 @@ nav ul li {
 a {
     color: rgb(121, 8, 83) !important;
 }
-
-/* Alto minimo etiquetas main */
-
-
-.subtitulo {
-    color: rgb(82, 16, 148);
+.principal{
+    @extend .flex
 }
 
+/* Alto minimo etiquetas main */
+.contenedor {
+	margin: auto;
+	display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ h2{
+    position: relative; 
+    font-size: 50px !important;
+    color: rgb(82, 16, 148);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: rgb(226, 235, 238);
+    border-left: 1px solid #000;
+    animation: escribir 3.5s steps(10) infinite alternate;
+}
 p {
     color: rgb(10, 4, 99);
     font-family: sans-serif;
@@ -89,24 +111,23 @@ video {
     margin: 2%;
 }
 figure{
-    display: flex;
+   @extend .flex;
     width: 100%;
-    justify-content: center;
+
 }
 figure >img{
 max-width: 100%;
 }
 /* CLASES FOOTER */
 footer {
+    @extend .flex;
     background-color: rgb(238, 136, 175);
     position:relative;
     bottom: 0px;
     left: 0px;
     width: 100vw;
-    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     height: auto;
 }
 
@@ -115,6 +136,10 @@ footer {
     height: 100%;
     padding: 10px;
     text-align: center; 
+}
+.footerMap{
+    color:black !important;
+text-decoration: none;
 }
 /* Contenedor de Iconos redes sociales */
 .socialContainer {
@@ -128,12 +153,11 @@ footer {
 /* CLASES PAGINAS PERROS Y GATOS */
 /* Contenedor de Productos y servicios */
 .container {
+    @extend .flex;
     list-style: none;
     width: 100vw;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 /* Cajas de servicios */
@@ -145,11 +169,10 @@ footer {
     padding: 2%;
 }
 .mainNosotros{
+    @extend .flex;
     width: 100%;
-    display: flex;
     flex-direction: row;
     height: auto;
-    justify-content: center;
     align-items: center;
     margin-bottom: 5%;
 }
@@ -171,17 +194,17 @@ footer {
     
 }
 .titulos{
+    @extend .flex;
    width: 100%;
    margin: 1%;
-   display: flex;
    font-family:'Akaya Telivigala', cursive;
    font-size: 50px;
    color: rgb(73, 32, 110);
-   justify-content: center;
 }
 .datosComent{
     font-family:'Akaya Telivigala', cursive !important;
     font-size: 20px !important;
+    width: 100%;
 }
 .imputForm{
     width: 100%;
@@ -193,10 +216,9 @@ footer {
 
 }
 .formContainer{
-    display: flex;
-    flex-direction: row;
+    @extend .flex;
+    flex-direction: column;
     width: 100vw;
-    justify-content: center;
     align-items: center;
     min-height: 75vh;
     
@@ -230,22 +252,22 @@ footer {
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 15px;
     width: 98%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .productItem{
+    @extend .flex;
     height: auto;
     max-height: 300px;
     border: 1px solid lightgrey;
     border-radius: 10px;
     box-shadow: 10px 5px 15px black;
-    background-color: white;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     transition: all .2s ease-in-out;
     cursor: pointer;
-
+    background: linear-gradient(to right, lightgrey, white);
 }
 
 .imgProductos{
@@ -254,12 +276,11 @@ footer {
 }
 
 .descripcionProducto{
+    @extend .flex;
     width:50%;
     height: auto;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .descripcionProducto >h2{
     font-size: 30px;
@@ -275,8 +296,10 @@ footer {
     }
 
 .productItem:hover{
-    transform:scale(1.05);
+    transform:scale(1.05) ;
+    background: linear-gradient(to right, white, lightgrey);
     box-shadow: none;
+    transform: rotate(-5deg);
 }
 .tituloCarousel{
     font-family: 'Patrick Hand', cursive;
@@ -302,6 +325,12 @@ footer {
     width: 80px;
     height: auto;
 }
+.banner{
+    width: 100vw;
+}
+.nav-link:hover{
+   text-shadow:  3px 3px 3px grey !important;
+}
   
 
 @media only screen and (max-width:420px){
@@ -323,7 +352,7 @@ footer {
     }
     .socialContainer{
         width: 100vw;
-        display: flex;
+        display:flex;
         justify-content: center;
     }
     .formulario {
@@ -347,6 +376,9 @@ footer {
         right: 10px;
         left:none;
         width: 60px;
+    }
+    .textoCarousel{
+        font-size: 10px;  
     }
 
 }
@@ -387,6 +419,9 @@ footer {
     width: 60px;
    
 }
+.textoCarousel{
+    font-size: 10px;  
+}
 }
 @media only screen and (min-width:769px) and (max-width:1200px){
     .mainHome{
@@ -400,4 +435,12 @@ footer {
         width: 60px;
       
     }
+    .textoCarousel{
+        font-size: 15px;  
+    }
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:-10% }
 }

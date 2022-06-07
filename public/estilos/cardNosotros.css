@@ -63,7 +63,7 @@
 
 @media only screen and (max-width: 647px) {
   .back p {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .cardFlip {
     width: 95%;
@@ -73,7 +73,7 @@
 
 @media only screen and (min-width: 420px) and (max-width: 647px) {
   .back p {
-    font-size: 25px;
+    font-size: 25px !important;
   }
   .cardFlip {
     width: 95%;
@@ -83,7 +83,7 @@
 
 @media only screen and (min-width: 647px) and (max-width: 767px) {
   .back p {
-    font-size: 25px;
+    font-size: 15px;
   }
   .cardFlip {
     width: 80%;
@@ -92,7 +92,7 @@
 }
 
 .back {
-  background: #86bfe0 !important;
+  background-color: #86bfe0;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   padding: 0 1em;
@@ -109,7 +109,7 @@
   font-weight: 600;
   color: #98b5eb !important;
   overflow: hidden;
-  background-color: #86bfe0 !important;
+  background-color: #86bfe0;
 }
 
 .front::before {
@@ -128,11 +128,10 @@
 .cardFlip:hover .front {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background: #86bfe0;
+  background-color: #86bfe0;
 }
 
 .cardFlip:hover .back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }
-/*# sourceMappingURL=cardNosotros.css.map */

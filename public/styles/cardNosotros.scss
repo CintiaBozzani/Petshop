@@ -2,10 +2,11 @@
 @import "_general";
 @import "_medias";
 
-$fondo: rgb(134, 191, 224);
-
+@mixin color {
+    background-color: rgb(134, 191, 224);
+  }
 .back {
-    background: $fondo  !important;
+    @include color ;
     transform: rotateY(-180deg);
     padding: 0 1em;
     p {
@@ -19,7 +20,7 @@ $fondo: rgb(134, 191, 224);
     font-weight: 600;
     color: rgb(152, 181, 235) !important;
     overflow: hidden;
-    background-color: $fondo  !important;
+    @include color  ;
 
     &::before {
         position: absolute;
@@ -39,7 +40,7 @@ $fondo: rgb(134, 191, 224);
     &:hover {
         .front {
             transform: rotateY(180deg);
-            background: $fondo;
+            @include color ;
         }
         .back {
             transform: rotateY(0deg);
@@ -47,5 +48,6 @@ $fondo: rgb(134, 191, 224);
     }
 
 }
+
 
 
