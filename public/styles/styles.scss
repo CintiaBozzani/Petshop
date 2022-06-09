@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Grape+Nuts&family=Homemade+Apple&family=Kalam:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
+@import "_eachMap";
 
  .flex{
     display:flex;
@@ -36,9 +36,6 @@ nav ul li {
     font-family: 'Akaya Telivigala', cursive; 
 }
 
-a {
-    color: rgb(121, 8, 83) !important;
-}
 .principal{
     @extend .flex
 }
@@ -56,6 +53,7 @@ a {
     color: rgb(82, 16, 148);
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Akaya Telivigala', cursive;
 }
 h2 span {
     position:absolute;
@@ -233,7 +231,6 @@ text-decoration: none;
     cursor: pointer;
     font-family:'Akaya Telivigala', cursiv !important;
     text-decoration: none !important;
-    color: black !important;
     font-size: 25px !important;
     text-align: center !important;
 }
@@ -334,7 +331,9 @@ text-decoration: none;
   
 
 @media only screen and (max-width:420px){
-    
+    .productos{ 
+        grid-template-columns: 1fr ;
+    }
     .titulos{
         font-size: 25px;
         text-align: center;
@@ -380,8 +379,10 @@ text-decoration: none;
     }
 
 }
-@media only screen and (min-width:421px) and (max-width:768px){
-   
+@media only screen and (min-width:421px) and (max-width:689px){
+    .productos{ 
+        grid-template-columns: 1fr ;
+    }
     .titulos{
         font-size: 35px;
         text-align: center;
@@ -419,18 +420,68 @@ text-decoration: none;
     font-size: 10px;  
 }
 }
-@media only screen and (max-width:689px){
-    .productos{ 
-        grid-template-columns: 1fr ;
-    }
-}
-
-@media only screen and (min-width:690px) and (max-width:1040px){
+@media only screen and (min-width:690px) and (max-width:768px){
     .productos{ 
         grid-template-columns: 1fr 1fr;
     }
+    .titulos{
+        font-size: 35px;
+        text-align: center;
+    }
+    .formulario {
+        width: 60%;
+    }
+    .mainHome{
+        grid-template-columns: 1fr ;
+    }
+    .titleHome {
+        top: 15vh;
+    }
+   .textNosotros{
+    width: 90%;
+    font-size: 30px; 
+   }
+   .mainNosotros{
+       flex-direction: column;
+   }
+
+.socialContainer{
+    flex-direction: column;
+    width: fit-content;
 }
-@media only screen and (min-width:769px) and (max-width:1200px){
+.footerText>p{
+    font-size: 15px;
+}
+.brand{
+    right: 10px !important;
+    width: 60px;
+   
+}
+.textoCarousel{
+    font-size: 10px;  
+}
+}
+@media only screen and (min-width:769px) and (max-width:1040px){
+    .productos{ 
+        grid-template-columns: 1fr 1fr;
+    }
+    .mainHome{
+        grid-template-columns: 1fr;
+    }
+    .textNosotros{
+        font-size: 30px; 
+       }
+       .brand{
+        right: 10px;
+        width: 60px;
+      
+    }
+    .textoCarousel{
+        font-size: 15px;  
+    }
+
+}
+@media only screen and (min-width:1041px) and (max-width:1200px){
     .mainHome{
         grid-template-columns: 1fr;
     }

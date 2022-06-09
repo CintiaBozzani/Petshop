@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kalam:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Grape+Nuts&family=Homemade+Apple&family=Kalam:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.btn--navBar {
+  color: #790853 !important;
+}
+
+.btn--comment {
+  color: black !important;
+}
+
 .flex, .principal, figure, footer, .container, .mainNosotros, .titulos, .formContainer, .productItem, .descripcionProducto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,10 +50,6 @@ nav ul li {
   font-family: 'Akaya Telivigala', cursive;
 }
 
-a {
-  color: #790853 !important;
-}
-
 /* Alto minimo etiquetas main */
 .contenedor {
   margin: auto;
@@ -60,6 +64,7 @@ h2 {
   color: #521094;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Akaya Telivigala', cursive;
 }
 
 h2 span {
@@ -275,7 +280,6 @@ footer {
   cursor: pointer;
   font-family: 'Akaya Telivigala', cursiv !important;
   text-decoration: none !important;
-  color: black !important;
   font-size: 25px !important;
   text-align: center !important;
 }
@@ -399,6 +403,10 @@ footer {
 }
 
 @media only screen and (max-width: 420px) {
+  .productos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .titulos {
     font-size: 25px;
     text-align: center;
@@ -455,7 +463,11 @@ footer {
   }
 }
 
-@media only screen and (min-width: 421px) and (max-width: 768px) {
+@media only screen and (min-width: 421px) and (max-width: 689px) {
+  .productos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .titulos {
     font-size: 35px;
     text-align: center;
@@ -501,21 +513,78 @@ footer {
   }
 }
 
-@media only screen and (max-width: 689px) {
-  .productos {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (min-width: 690px) and (max-width: 1040px) {
+@media only screen and (min-width: 690px) and (max-width: 768px) {
   .productos {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .titulos {
+    font-size: 35px;
+    text-align: center;
+  }
+  .formulario {
+    width: 60%;
+  }
+  .mainHome {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .titleHome {
+    top: 15vh;
+  }
+  .textNosotros {
+    width: 90%;
+    font-size: 30px;
+  }
+  .mainNosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .socialContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footerText > p {
+    font-size: 15px;
+  }
+  .brand {
+    right: 10px !important;
+    width: 60px;
+  }
+  .textoCarousel {
+    font-size: 10px;
+  }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1040px) {
+  .productos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .mainHome {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .textNosotros {
+    font-size: 30px;
+  }
+  .brand {
+    right: 10px;
+    width: 60px;
+  }
+  .textoCarousel {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1041px) and (max-width: 1200px) {
   .mainHome {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

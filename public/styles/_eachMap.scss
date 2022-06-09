@@ -1,0 +1,9 @@
+$botones:(
+    navBar:rgb(121, 8, 83),
+    comment:black,
+);
+@each $type, $color in $botones{
+    .btn--#{$type}{
+        color:$color !important;
+    }
+};
