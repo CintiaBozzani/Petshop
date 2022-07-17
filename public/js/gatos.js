@@ -1,16 +1,19 @@
-const productosGatos =[]
 
-console.log(dataProducts)
-
-for (i = 0; i < dataProducts.length; i++) 
-    if (dataProducts[i].segmento == "gatos") {
-        productosGatos.push(dataProducts[i])
-    }
+function getData() {
+    const productosGatos = []
+    for (i = 0; i < dataProducts.length; i++)
+        if (dataProducts[i].segmento == "gatos") {
+            productosGatos.push(dataProducts[i])
+        }
     console.log(productosGatos)
+    display(productosGatos)
+}
+getData()
 
-    let html=""
-    for (i = 0; i < productosGatos.length; i++){
-        html +=`
+function display(productosGatos) {
+    let html = ""
+    for (i = 0; i < productosGatos.length; i++) {
+        html += `
         <div class="productItem">   
                     <img class="imgProductos" src="../imagenes/gatos/${productosGatos[i].imagen}" alt="producto royal canin">
                     <div class="descripcionProducto">
@@ -22,4 +25,5 @@ for (i = 0; i < dataProducts.length; i++)
                 </div>
         `
     }
-    document.getElementById("productosGatos").innerHTML= html
+    document.getElementById("productosGatos").innerHTML = html
+}

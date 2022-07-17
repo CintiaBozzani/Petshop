@@ -1,18 +1,24 @@
-const productosPerros = []
 
-console.log(dataProducts) //LLamo a la constante dataProductos del archivo dataProducts.js que incorpore en el script de perros.html
+function getData() {
+    const productosPerros = []
 
-//Recorro el array mediante un bucle for y con un condicional separo los productos cuyo segmento sea perros, mediante metodo push los guardo en al array productosPerros
-for (i = 0; i < dataProducts.length; i++) {
-    if (dataProducts[i].segmento == "perros") {
-        productosPerros.push(dataProducts[i])
+    console.log(dataProducts) //LLamo a la constante dataProductos del archivo dataProducts.js que incorpore en el script de perros.html
+
+    //Recorro el array mediante un bucle for y con un condicional separo los productos cuyo segmento sea perros, mediante metodo push los guardo en al array productosPerros
+    for (i = 0; i < dataProducts.length; i++) {
+        if (dataProducts[i].segmento == "perros") {
+            productosPerros.push(dataProducts[i])
+        }
     }
+    console.log(productosPerros)
+    display(productosPerros)
 }
-console.log(productosPerros)
+getData()
 //Recorro el array productosPerros y por cada objeto en este creo un TemplateString que lo guardo en la variable html
-let html = ""
-for (i = 0; i < productosPerros.length; i++) {
-    html += `
+function display(productosPerros) {
+    let html = ""
+    for (i = 0; i < productosPerros.length; i++) {
+        html += `
                 <div class="productItem">
                     <img class="imgProductos" src="../imagenes/perros/${productosPerros[i].imagen}" alt="producto royal canin">
                     <div class="descripcionProducto">
@@ -24,7 +30,8 @@ for (i = 0; i < productosPerros.length; i++) {
                 </div>
 
 `
+    }
+    console.log(html)
+    //busco en el html de perros el elemento cuyo id es productosPerros y mediante el atributo innerHtml le guardo el TemplateString creado en la variable html
+    document.getElementById("productosPerros").innerHTML = html
 }
-console.log(html)
-//busco en el html de perros el elemento cuyo id es productosPerros y mediante el atributo innerHtml le guardo el TemplateString creado en la variable html
-document.getElementById("productosPerros").innerHTML = html

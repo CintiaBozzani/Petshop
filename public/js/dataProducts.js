@@ -85,7 +85,7 @@ const dataProducts = [
         nombre:"Regular Fit",
         peso:9,
         precio:5500,
-        imagen:"productoGatoCinco.svg"
+        imagen:"royalGatoCinco.svg"
     },
     {
         segmento:"gatos",
