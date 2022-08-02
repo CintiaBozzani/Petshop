@@ -1,6 +1,8 @@
+const inputSearch = document.querySelector('#inputSearch')
 
+const productosGatos = []
 function getData() {
-    const productosGatos = []
+
     for (i = 0; i < dataProducts.length; i++)
         if (dataProducts[i].segmento == "gatos") {
             productosGatos.push(dataProducts[i])
@@ -9,6 +11,14 @@ function getData() {
     display(productosGatos)
 }
 getData()
+
+inputSearch.addEventListener('keyup', (event) => {
+    let input = event.target.value
+    let filterResult = productosGatos.filter(producto =>
+        producto.nombre.toLowerCase().includes(input.trim().toLowerCase()))
+    console.log(filterResult)
+    display(filterResult)
+})
 
 function display(productosGatos) {
     let html = ""
