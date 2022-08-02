@@ -1,6 +1,6 @@
 const inputSearch = document.querySelector('#inputSearch')
-
 const productosGatos = []
+
 function getData() {
 
     for (i = 0; i < dataProducts.length; i++)
@@ -22,6 +22,7 @@ inputSearch.addEventListener('keyup', (event) => {
 
 function display(productosGatos) {
     let html = ""
+    if (productosGatos.length > 0) {
     for (i = 0; i < productosGatos.length; i++) {
         html += `
         <div class="productItem">   
@@ -35,5 +36,6 @@ function display(productosGatos) {
                 </div>
         `
     }
+}else{html = `<h1 class="notResult">No se encontraron productos con esa busqueda</h1>`}
     document.getElementById("productosGatos").innerHTML = html
 }

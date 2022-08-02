@@ -521,6 +521,10 @@ footer {
 .inputSearch{
   width: 50%;
 }
+.notResult{
+  width: 100vw;
+  text-align: center;
+}
 
 @media only screen and (min-width: 690px) and (max-width: 768px) {
   .productos {
