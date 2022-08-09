@@ -14,10 +14,22 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg shadow">
+        <a href="Favoritos.html">
+            <div><span class="material-icons corazonFab">
+                    favorite
+                </span>
+                
+            </div>
+        </a>
+        <p id="QFavoritos"></p>
+
+
         <img class="brand" src="../imagenes/logo.png" alt="">
         <div class="w-100 d-flex flex-column">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,6 +55,7 @@
                         <a class="nav-link btn--navBar" href="Contacto.html">Contacto</a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -53,10 +66,10 @@
             <h2 class="subtitulo">Productoss<span>&#160;</span></h2>
         </div>
         <div class="inputSearchContainer">
-            <input class="inputSearch" id="inputSearch" placeholder="Busca tu producto favorito"/>
+            <input class="inputSearch" id="inputSearch" placeholder="Busca tu producto favorito" />
         </div>
         <section class="principal">
-            
+
             <div class="productos" id="productosGatos"></div>
 
         </section>

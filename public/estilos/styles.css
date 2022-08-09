@@ -347,14 +347,17 @@ footer {
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
   color: chocolate;
-  padding: 10px;
+  
 }
 
 .descripcionProducto > h3 {
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
   color: chocolate;
-  padding: 10px;
+  
+}
+.corazonFab{
+  color:red;
 }
 
 .productItem:hover {
@@ -519,7 +522,7 @@ footer {
   align-items: center;
 }
 .inputSearch{
-  width: 50%;
+  width: 50% !important;
 }
 .notResult{
   width: 100vw;

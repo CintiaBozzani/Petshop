@@ -1,5 +1,6 @@
 const dataProducts = [
     {
+        id:1,
         segmento:"perros",
         marca:"Royal Canin",
         nombre:"Digestive Care",
@@ -8,6 +9,7 @@ const dataProducts = [
         imagen:"productoUno.svg"
     },
     {
+        id:2,
         segmento:"perros",
         marca:"Royal Canin",
         nombre:"Giant Adult",
@@ -16,6 +18,7 @@ const dataProducts = [
         imagen:"productoDos.svg"
     },
     {
+        id:3,
         segmento:"perros",
         marca:"Royal Canin",
         nombre:"Puppy Medium",
@@ -24,6 +27,7 @@ const dataProducts = [
         imagen:"productoTres.svg"
     },
     {
+        id:4,
         segmento:"perros",
         marca:"Royal Canin",
         nombre:"Puppy Mini",
@@ -32,6 +36,7 @@ const dataProducts = [
         imagen:"productoCuatro.svg"
     },
     {
+        id:5,
         segmento:"perros",
         marca:"Royal Canin",
         nombre:"Urinary",
@@ -40,6 +45,7 @@ const dataProducts = [
         imagen:"productoCinco.svg"
     },
     {
+        id:6,
         segmento:"perros",
         marca:"Royal Canin",
         nombre:"Medium Adult",
@@ -48,6 +54,7 @@ const dataProducts = [
         imagen:"productoSeis.svg"
     },
     {
+        id:7,
         segmento:"gatos",
         marca:"Royal Canin",
         nombre:"Kitten",
@@ -56,6 +63,7 @@ const dataProducts = [
         imagen:"productoGato1.svg"
     },
     {
+        id:8,
         segmento:"gatos",
         marca:"Royal Canin",
         nombre:"Appetite Control",
@@ -64,6 +72,7 @@ const dataProducts = [
         imagen:"productoGatoDos.svg"
     },
     {
+        id:9,
         segmento:"gatos",
         marca:"Royal Canin",
         nombre:"Sterilised",
@@ -72,6 +81,7 @@ const dataProducts = [
         imagen:"productoGatoTres.svg"
     },
     {
+        id:10,
         segmento:"gatos",
         marca:"Royal Canin",
         nombre:"HairBall care",
@@ -80,6 +90,7 @@ const dataProducts = [
         imagen:"productoGatoCuatro.svg"
     },
     {
+        id:11,
         segmento:"gatos",
         marca:"Royal Canin",
         nombre:"Regular Fit",
@@ -88,6 +99,7 @@ const dataProducts = [
         imagen:"royalGatoCinco.svg"
     },
     {
+        id:12,
         segmento:"gatos",
         marca:"Royal Canin",
         nombre:"Exigent",
@@ -96,3 +108,5 @@ const dataProducts = [
         imagen:"productoGatoSeis.svg"
     },
 ]
+
+const favoritos=[]
