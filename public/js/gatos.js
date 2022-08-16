@@ -40,6 +40,14 @@ function getFavorito(idFromButton){
         todosFavoritos.push(idFromButton)
         let corazon = document.getElementById("corazon"+idFromButton)
         corazon.textContent="favorite"
+
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Has agregado el producto a tus favoritos',
+            showConfirmButton: false,
+            timer: 1500
+          })
         
     }
     
@@ -49,6 +57,13 @@ function getFavorito(idFromButton){
         let corazon = document.getElementById("corazon"+idFromButton)
         corazon.textContent="favorite_border"
      
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Has quitado el producto a tus favoritos',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }
     localStorage.setItem("favoritosGatos", JSON.stringify(favoritosGatos))
    localStorage.setItem("favoritos", JSON.stringify(todosFavoritos))

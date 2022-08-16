@@ -39,12 +39,28 @@ function getFavorito(idFromButton){
         let corazon = document.getElementById("corazon"+idFromButton)
         corazon.textContent="favorite"
         
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Has agregado el producto a tus favoritos',
+            showConfirmButton: false,
+            timer: 1500
+          })
+
+
     }else{
         favoritosPerros = favoritosPerros.filter(favorito => favorito !==idFromButton)
         todosFavoritos = todosFavoritos.filter(favorito => favorito !==idFromButton)
         let corazon = document.getElementById("corazon"+idFromButton)
         corazon.textContent="favorite_border"
      
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Has quitado el producto a tus favoritos',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }
     
     localStorage.setItem("favoritosPerros", JSON.stringify(favoritosPerros))
