@@ -1,10 +1,15 @@
 const inputSearch = document.querySelector('#inputSearch')
+const dataProducts=[]
 const productosGatos = []
 let favoritosGatos=[]
 let todosFavoritos=[]
 
 
-function getData() {
+ async function getData() {
+
+    await fetch('../js/dataProducts.json')
+    .then(response=>response.json())
+    .then(json=>dataProducts.push(...json))
 
     if(localStorage.getItem("favoritosGatos")!==null){
         todosFavoritos.push(...JSON.parse(localStorage.getItem("favoritosPerros"))) 
